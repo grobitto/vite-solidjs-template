@@ -1,0 +1,65 @@
+{
+  "name": "ntvplus smart tv module",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview",
+    "prepare": "cd .. && husky ntvplus.smarttv.demo/.husky",
+    "format": "lint-staged",
+    "api": "openapi-ts"
+  },
+  "browserslist": [
+    "defaults, >1%"
+  ],
+  "lint-staged": {
+    "*.future-eslint": [
+      "eslint --fix --max-warnings 0"
+    ],
+    "*.{js,ts,tsx,jsx,mjs}": [
+      "prettier --write"
+    ],
+    "*.{css,scss,json,html}": [
+      "prettier --write"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@archoleat/stylelint-config-extended-scss": "^1.9.2",
+    "@eslint/js": "^9.15.0",
+    "@hey-api/openapi-ts": "^0.56.1",
+    "@inlite/vite-scss-generate-index": "^0.1.2",
+    "@types/eslint__js": "^8.42.3",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-solid": "^0.14.4",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.49",
+    "postcss-ts-classnames": "^0.3.0",
+    "prettier": "^3.3.3",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "sass-embedded": "^1.81.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-define-config": "^1.7.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.2",
+    "terser": "^5.36.0",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^5.4.11",
+    "vite-plugin-solid": "^2.10.2",
+    "vite-plugin-solid-svg": "^0.8.1"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.4.4",
+    "@inlite/solidjs-typed-classlist": "^0.1.3",
+    "solid-js": "^1.9.3"
+  }
+}
