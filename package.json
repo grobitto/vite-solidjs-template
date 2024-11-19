@@ -1,5 +1,5 @@
 {
-  "name": "ntvplus smart tv module",
+  "name": "vite-solidjs-template",
   "version": "0.1.0",
   "description": "",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
-    "prepare": "cd .. && husky ntvplus.smarttv.demo/.husky",
+    "prepare": "husky",
     "format": "lint-staged",
     "api": "openapi-ts"
   },

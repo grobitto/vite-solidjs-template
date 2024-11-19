@@ -1,3 +1,2 @@
 #!/usr/bin/env sh
-cd ntvplus.smarttv.demo
 npm run format
